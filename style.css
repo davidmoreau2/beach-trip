@@ -66,13 +66,12 @@ nav ul li:focus {
   align-items: center;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 100px;
   text-align: center;
 }
 
 .main h1 {
   margin-bottom: -10px;
-  font-size: 100%;
+  font-size: 5rem;
   width: 100%;
   height: inherit;
 }
