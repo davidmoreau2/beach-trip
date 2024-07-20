@@ -21,6 +21,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  justify-items: center;
   justify-content: space-between;
   background-color: var(--third);
   width: 100%;
@@ -38,6 +39,7 @@ nav ul {
 
 nav ul li {
   margin-right: 25px;
+  text-align: center;
 }
 
 nav ul li a {
@@ -51,7 +53,11 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-nav ul li a:click .main {
+nav ul li:focus {
+  transform: scale(0.5);
+}
+
+.main {
   background: url(./images/d3.jpg) center center/cover;
   height: 50vh;
   width: 100%;
@@ -66,7 +72,7 @@ nav ul li a:click .main {
 
 .main h1 {
   margin-bottom: -10px;
-  font-size: 50%;
+  font-size: 100%;
   width: 100%;
   height: inherit;
 }
@@ -151,9 +157,12 @@ nav ul li a:click .main {
 }
 
 .calendarmain {
-  margin-top: 75px;
   width: 90%;
   margin: 45px auto;
+}
+
+.heading {
+  margin-top: 10px;
 }
 
 .grid-container {
@@ -206,6 +215,7 @@ nav ul li a:click .main {
   justify-content: center;
   width: 100%;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .submission-form {
@@ -282,6 +292,34 @@ i:hover {
   color: #36ba98;
 }
 
+.food {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+}
+.menu {
+  min-height: 50vh;
+  width: 100%;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.link a {
+  font-size: 2rem;
+  text-decoration: none;
+  border: var(--primary-color);
+  background-color: var(--forth);
+  padding: 15px;
+  border-radius: 15px;
+  color: #fff;
+}
+
 @media (max-width: 430px) {
   .description1,
   .fpp {
@@ -290,14 +328,28 @@ i:hover {
   .description1 img {
     width: 100%;
   }
+  .description1 p {
+    padding: 0;
+    width: 100%;
+  }
+  .topfloor h1 {
+    text-align: center;
+  }
   .fpp img {
     width: 100%;
   }
   nav ul li a {
-    font-size: 10px;
+    padding: 0;
+    font-size: 15px;
+  }
+  .navbar {
+    padding: 0px;
+    flex-direction: column;
+    height: 80px;
   }
   .navbar h1 {
     font-size: 15px;
+    margin-bottom: -5px;
   }
   .bodyrooms {
     padding: 0px;
@@ -313,5 +365,27 @@ i:hover {
     display: flex;
     flex-direction: column;
     max-width: 90vw;
+  }
+  .trip.show,
+  .res.show {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    padding: 0px;
+  }
+  .title img {
+    max-width: 100%;
+  }
+  .title h4 {
+    text-align: center;
+  }
+  .trip-info,
+  .res-info {
+    width: 100%;
+    text-align: center;
   }
 }
