@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #36ba98;
+  --secondary-color: #e9c46a;
+  --third: #f4a261;
+  --forth: #e76f51;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--third);
+  width: 100%;
+  padding: 0 45px;
+  height: 75px;
+  margin-bottom: 0px;
+  color: var(--primary-color);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+}
+
+.main {
+  background: url(./images/d3.jpg) center center/cover;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 100px;
+  text-align: center;
+}
+
+.main h1 {
+  margin-bottom: -10px;
+  font-size: 90%;
+}
+
+.main p {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #fff;
+}
+
+.welcome {
+  width: 100%;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.welcome h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.bodyrooms {
+  padding: 45px;
+}
+
+.roomsmain {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.fpp {
+  padding: 25px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.fpp img {
+  width: 50%;
+}
+
+.topfloor {
+  width: 100%;
+}
+
+.description1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.description1 img {
+  width: 50%;
+  border-radius: 15px;
+}
+
+.description1 p {
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.sfp {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+}
+
+.sfp h1 {
+  text-align: center;
+}
+
+.calendarmain {
+  margin-top: 75px;
+  width: 90%;
+  margin: 45px auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.heading {
+  grid-column: 1 / 9;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--forth);
+  color: var(--secondary-color);
+}
+
+.day {
+  grid-row: 2 / 3;
+}
+
+.day h3 {
+  border: 2px orange solid;
+  justify-content: center;
+  display: flex;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.schedule {
+  background-color: var(--third);
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.submission-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 5px coral solid;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  font-size: 25px;
+  background-color: coral;
+  color: #fff;
+}
+
+@media (max-width: 400px) {
+  .description1,
+  .fpp {
+    flex-direction: column;
+  }
+  .description1 img {
+    width: 100%;
+  }
+  .fpp img {
+    width: 100%;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  .navbar h1 {
+    font-size: 15px;
+  }
+  .bodyrooms {
+    padding: 0px;
+  }
+  .main h1 {
+    font-size: 55px;
+  }
+  .calendarmain {
+    width: 90%;
+    margin: auto;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+  }
+}
