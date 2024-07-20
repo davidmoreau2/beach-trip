@@ -51,7 +51,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-.main {
+nav ul li a:click .main {
   background: url(./images/d3.jpg) center center/cover;
   height: 50vh;
   width: 100%;
@@ -234,12 +234,9 @@ nav ul li a:hover {
   margin: auto;
 }
 
-.trip {
-  display: flex;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  justify-content: space-between;
-  padding: 20px;
+.trip,
+.res {
+  display: none;
 }
 
 .title {
@@ -259,11 +256,25 @@ nav ul li a:hover {
   font-family: inherit;
 }
 
-.trip-info {
+.trip-info,
+.res-info {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.trip.show,
+.res.show {
+  display: flex;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .title h4 a {
