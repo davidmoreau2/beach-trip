@@ -68,6 +68,7 @@ nav ul li a:hover {
   margin-bottom: -10px;
   font-size: 50%;
   width: 100%;
+  height: inherit;
 }
 
 .main p {
