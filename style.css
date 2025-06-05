@@ -198,6 +198,7 @@ nav ul li:focus {
   grid-row: 3;
   display: flex;
   flex-direction: column;
+  height: auto
   align-items: center;
   justify-content: center;
   padding: 10px;
