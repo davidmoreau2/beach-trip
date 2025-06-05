@@ -195,7 +195,7 @@ nav ul li:focus {
 
 .schedule {
   background-color: var(--third);
-  grid-row: 3 / 4;
+  grid-row: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
